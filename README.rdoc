@@ -5,7 +5,7 @@ Rails API meant to provide the backend site of this Foodie Blog: https://github.
 ---------------------------------------------------------------
 
 <b>Status Update</b>
-- Currently implemented support for Posts CRUD actions.
+- Currently implemented support for Posts, Recipes and Reviews CRUD actions.
 - Test suite setup.
 
 ---------------------------------------------------------------
