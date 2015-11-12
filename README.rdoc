@@ -15,4 +15,13 @@ Rails API meant to provide the backend site of this Foodie Blog: https://github.
 * <code>bundle install</code>
 * <code>rake db:migrate</code>
 * <code>rake test</code>
-* Have fun!
+
+---------------------------------------------------------------
+
+<b>Testing endpoints</b>
+
+* Create new Posts/Reviews/Recipes:
+<code>curl -H "Content-Type:application/json; charset=utf-8" -d '{"post": { "user_id": 3, "title":"This is my first post","body":"I've always wanted to write about food!"}}' http://localhost:3000/posts</code>
+
+* Retrieve the list of Posts/Reviews/Recipes:
+<code>curl http://localhost:3000/posts</code>
