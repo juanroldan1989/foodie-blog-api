@@ -1,28 +1,18 @@
-== README
+== Foodie Blog API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails API meant to provide the backend site of this Foodie Blog.
 
-Things you may want to cover:
+---------------------------------------------------------------
 
-* Ruby version
+<b>Status Update</b>
+- Currently implemented support for Posts CRUD actions.
+- Test suite setup.
 
-* System dependencies
+---------------------------------------------------------------
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+<b>Local Development</b>
+* <code>git clone git@github.com:juanroldan1989/foodie-blog-api.git</code>
+* <code>bundle install</code>
+* <code>rake db:migrate</code>
+* <code>rakte test</code>
+* Have fun!
