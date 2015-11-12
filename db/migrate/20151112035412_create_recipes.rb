@@ -1,6 +1,6 @@
-class CreatePosts < ActiveRecord::Migration
+class CreateRecipes < ActiveRecord::Migration
   def change
-    create_table :posts do |t|
+    create_table :recipes do |t|
       t.integer :user_id
       t.string :title
       t.text :body
@@ -8,6 +8,6 @@ class CreatePosts < ActiveRecord::Migration
       t.timestamps
     end
 
-    add_index :posts, :user_id
+    add_index :recipes, :user_id
   end
 end
