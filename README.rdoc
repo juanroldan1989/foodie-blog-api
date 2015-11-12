@@ -1,6 +1,6 @@
 == Foodie Blog API
 
-Rails API meant to provide the backend site of this Foodie Blog.
+Rails API meant to provide the backend site of this Foodie Blog: https://github.com/juanroldan1989/foodie-blog
 
 ---------------------------------------------------------------
 
