@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  title: How to prepare a nice salad!
+  body: Hi! first you need to find the right ingredients...
+
+two:
+  user_id: 4
+  title: The best pizza in town
+  body: Hello! and welcome to another master recipe from my own city...
