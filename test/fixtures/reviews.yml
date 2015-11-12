@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 3
+  title: Something nice to say about
+  body: I really like the pizza recipe from Jhon. It's at the same time original and easy to prepare and enjoy with friends.
+
+two:
+  user_id: 2
+  title: I would love to see this improved!
+  body: As much as I looooove salads, this recipe from Caroline would be greater I believe with less ingredients.

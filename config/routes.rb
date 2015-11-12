@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :reviews, except: [:new, :edit]
   resources :recipes, except: [:new, :edit]
   resources :posts, except: [:new, :edit]
   # The priority is based upon order of creation: first created -> highest priority.
