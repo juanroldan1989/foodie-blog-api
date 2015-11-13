@@ -11,7 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151112040100) do
+ActiveRecord::Schema.define(version: 20151113001830) do
+
+  create_table "activity_items", force: true do |t|
+    t.integer  "user_id"
+    t.string   "action_type"
+    t.string   "resource_type"
+    t.integer  "resource_id"
+    t.string   "resource_title"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "activity_items", ["action_type"], name: "index_activity_items_on_action_type"
+  add_index "activity_items", ["resource_id"], name: "index_activity_items_on_resource_id"
+  add_index "activity_items", ["resource_type"], name: "index_activity_items_on_resource_type"
+  add_index "activity_items", ["user_id"], name: "index_activity_items_on_user_id"
 
   create_table "posts", force: true do |t|
     t.integer  "user_id"
