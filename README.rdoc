@@ -5,7 +5,9 @@ Rails API meant to provide the backend site of this Foodie Blog: https://github.
 ---------------------------------------------------------------
 
 <b>Status Update</b>
-- Currently implemented support for Posts, Recipes and Reviews CRUD actions.
+- Implemented support for Posts, Recipes and Reviews CRUD actions.
+- Implemented endpoint for retrieving activiy items to conform the activity feed.
+- Currently working on generating activity items based on Posts, Recipes or Reviews being CRUD.
 - Test suite setup.
 
 ---------------------------------------------------------------
