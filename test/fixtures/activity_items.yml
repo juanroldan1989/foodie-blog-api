@@ -1,22 +1,21 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
+<% 1.upto(20) do |i| %>
+item_<%= i %>:
+  user_id: <%= i %>
+  action_type: <%= ["create", "update", "delete"].sample %>
+  resource_type: <%= ["recipe", "review", "post"].sample %>
+  resource_id: <%= i*2 %>
+  resource_title: Resource Title <%= i %>
+  created_at: <%= Time.now - i.weeks %>
+  updated_at: <%= Time.now - i.weeks %>
+<% end %>
+
+item_21:
   user_id: 1
   action_type: create
   resource_type: recipe
   resource_id: 24
   resource_title: How to prepare a nice salad!
-
-two:
-  user_id: 3
-  action_type: update
-  resource_type: review
-  resource_id: 4
-  resource_title: Something nice to say about
-
-three:
-  user_id: 2
-  action_type: delete
-  resource_type: post
-  resource_id: 8
-  resource_title: Where're my vegetables?
+  created_at: <%= Time.now - 21.weeks %>
+  updated_at: <%= Time.now - 21.weeks %>

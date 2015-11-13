@@ -2,7 +2,7 @@ require 'test_helper'
 
 class ActivityItemsControllerTest < ActionController::TestCase
   setup do
-    @activity_item = activity_items(:one)
+    @activity_items = activity_items
   end
 
   test "should get index" do
