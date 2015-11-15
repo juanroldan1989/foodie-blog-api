@@ -7,8 +7,9 @@ Rails API meant to provide the backend site of this Foodie Blog: https://github.
 <b>Status Update</b>
 - Implemented support for Posts, Recipes and Reviews CRUD actions.
 - Implemented endpoint for retrieving activiy items to conform the activity feed.
-- Currently working on generating activity items based on Posts, Recipes or Reviews being CRUD.
+- Activity items generated properly based when creating, updating or deleting Posts, Recipes or Reviews.
 - Test suite setup.
+- Next step: setup authentication workflow on API based on requirements/workflows for EmberJS app.
 
 ---------------------------------------------------------------
 
@@ -17,13 +18,17 @@ Rails API meant to provide the backend site of this Foodie Blog: https://github.
 * <code>bundle install</code>
 * <code>rake db:migrate</code>
 * <code>rake test</code>
+* <code>foreman start</code>
 
 ---------------------------------------------------------------
 
 <b>Testing endpoints</b>
 
 * Create new Posts/Reviews/Recipes:
-<code>curl -H "Content-Type:application/json; charset=utf-8" -d '{"post": { "user_id": 3, "title":"This is my first post","body":"I've always wanted to write about food!"}}' http://localhost:3000/posts</code>
+<code>curl -H "Content-Type:application/json; charset=utf-8" -d '{"post": { "user_id": 3, "title":"This is my first post","body":"I've always wanted to write about food!"}}' http://localhost:5000/posts</code>
 
 * Retrieve the list of Posts/Reviews/Recipes:
-<code>curl http://localhost:3000/posts</code>
+<code>curl http://localhost:5000/posts</code>
+
+* Retrieve the list of ActivityItems generated:
+<code>curl http://localhost:5000/activity_items</code>
