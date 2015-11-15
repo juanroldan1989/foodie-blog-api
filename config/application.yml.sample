@@ -1,0 +1,12 @@
+development: &development
+
+  #SideKiq
+  sidekiq_url: redis://localhost:6379/0
+
+test:
+  <<: *development
+
+production:
+
+  #SideKiq
+  sidekiq_url: redis://localhost:6379/0
