@@ -5,7 +5,7 @@ class ActivityItemsController < ApplicationController
   def index
     @activity_items = ActivityItem.latest(20)
 
-    render json: @activy_items
+    render json: @activity_items
   end
 
 end
