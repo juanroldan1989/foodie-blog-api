@@ -20,9 +20,9 @@ module FoodieBlogApi
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 
-    Rails.application.config.middleware.insert_before 0, "Rack::Cors" do
+    Rails.application.config.middleware.insert_before ActionDispatch::Static, "Rack::Cors" do
       allow do
-        origins "localhost:9000" # Frontend app running at port '9000'
+        origins "localhost:4200" # Frontend app running at port '4200'
 
         resource "*",
           headers: :any,
