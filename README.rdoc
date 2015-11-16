@@ -14,6 +14,7 @@ Rails API meant to provide the backend site of this Foodie Blog: https://github.
 ---------------------------------------------------------------
 
 <b>Local Development</b>
+* Setup Redis locally: http://redis.io/topics/quickstart
 * <code>git clone git@github.com:juanroldan1989/foodie-blog-api.git</code>
 * <code>bundle install</code>
 * <code>rake db:migrate</code>
