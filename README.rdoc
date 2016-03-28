@@ -20,6 +20,7 @@ Rails API meant to provide the backend site of this Foodie Blog: https://github.
 * <code>rake db:migrate</code>
 * <code>rake test</code>
 * Set example content: <code>rake set:example:content</code>
+* <code>redis-server</code>
 * <code>foreman start</code>
 
 ---------------------------------------------------------------
