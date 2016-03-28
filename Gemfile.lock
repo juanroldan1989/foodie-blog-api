@@ -50,6 +50,8 @@ GEM
       timers (>= 4.1.1)
     connection_pool (2.2.0)
     erubis (2.7.0)
+    faker (1.6.3)
+      i18n (~> 0.5)
     figaro (1.1.1)
       thor (~> 0.14)
     foreman (0.78.0)
@@ -128,6 +130,7 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_serializers (~> 0.9.3)
+  faker (~> 1.6.3)
   figaro (~> 1.1.1)
   foreman (~> 0.78.0)
   pg (~> 0.18.4)

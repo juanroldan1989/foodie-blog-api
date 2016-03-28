@@ -8,6 +8,7 @@ gem "rails",                    "~> 4.1.0"
 gem "rails-api",                "~> 0.4.0"
 gem "rack-cors",                "~> 0.4.0"
 gem "sidekiq",                  "~> 3.5.3"
+gem "faker",                    "~> 1.6.3"
 
 group :development do
   gem "foreman",                "~> 0.78.0"
