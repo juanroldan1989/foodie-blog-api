@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20151113001830) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "activity_items", force: true do |t|
     t.integer  "user_id"
     t.string   "action_type"
@@ -23,10 +26,10 @@ ActiveRecord::Schema.define(version: 20151113001830) do
     t.datetime "updated_at"
   end
 
-  add_index "activity_items", ["action_type"], name: "index_activity_items_on_action_type"
-  add_index "activity_items", ["resource_id"], name: "index_activity_items_on_resource_id"
-  add_index "activity_items", ["resource_type"], name: "index_activity_items_on_resource_type"
-  add_index "activity_items", ["user_id"], name: "index_activity_items_on_user_id"
+  add_index "activity_items", ["action_type"], name: "index_activity_items_on_action_type", using: :btree
+  add_index "activity_items", ["resource_id"], name: "index_activity_items_on_resource_id", using: :btree
+  add_index "activity_items", ["resource_type"], name: "index_activity_items_on_resource_type", using: :btree
+  add_index "activity_items", ["user_id"], name: "index_activity_items_on_user_id", using: :btree
 
   create_table "posts", force: true do |t|
     t.integer  "user_id"
@@ -36,7 +39,7 @@ ActiveRecord::Schema.define(version: 20151113001830) do
     t.datetime "updated_at"
   end
 
-  add_index "posts", ["user_id"], name: "index_posts_on_user_id"
+  add_index "posts", ["user_id"], name: "index_posts_on_user_id", using: :btree
 
   create_table "recipes", force: true do |t|
     t.integer  "user_id"
@@ -46,7 +49,7 @@ ActiveRecord::Schema.define(version: 20151113001830) do
     t.datetime "updated_at"
   end
 
-  add_index "recipes", ["user_id"], name: "index_recipes_on_user_id"
+  add_index "recipes", ["user_id"], name: "index_recipes_on_user_id", using: :btree
 
   create_table "reviews", force: true do |t|
     t.integer  "user_id"
@@ -56,6 +59,6 @@ ActiveRecord::Schema.define(version: 20151113001830) do
     t.datetime "updated_at"
   end
 
-  add_index "reviews", ["user_id"], name: "index_reviews_on_user_id"
+  add_index "reviews", ["user_id"], name: "index_reviews_on_user_id", using: :btree
 
 end
