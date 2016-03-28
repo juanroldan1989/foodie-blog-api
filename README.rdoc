@@ -1,6 +1,6 @@
 == Foodie Blog API {<img src="https://codeclimate.com/github/juanroldan1989/foodie-blog-api/badges/gpa.svg" />}[https://codeclimate.com/github/juanroldan1989/foodie-blog-api]
 
-Rails API meant to provide the backend site of this Foodie Blog: https://github.com/juanroldan1989/foodie-blog
+Rails API meant to store resources(posts, recipes, reviews and activity) and provide the backend for this Cooking Blog: https://github.com/juanroldan1989/foodie-blog
 
 ---------------------------------------------------------------
 
