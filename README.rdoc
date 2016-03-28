@@ -35,4 +35,5 @@ Rails API meant to provide the backend site of this Foodie Blog: https://github.
 <code>curl http://localhost:5000/activity_items</code>
 
 Live app https://foodie-blog-api.herokuapp.com/v1/activity_items
+
 Live app https://foodie-blog-api.herokuapp.com/v1/posts
