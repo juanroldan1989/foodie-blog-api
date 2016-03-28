@@ -7,7 +7,6 @@ gem "figaro",                   "~> 1.1.1"
 gem "rails",                    "~> 4.1.0"
 gem "rails-api",                "~> 0.4.0"
 gem "rack-cors",                "~> 0.4.0"
-gem "sqlite3",                  "~> 1.3.11"
 gem "sidekiq",                  "~> 3.5.3"
 
 group :development do
