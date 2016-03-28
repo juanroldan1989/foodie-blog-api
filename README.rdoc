@@ -1,4 +1,4 @@
-== Foodie Blog API
+== Foodie Blog API {<img src="https://codeclimate.com/github/juanroldan1989/foodie-blog-api/badges/gpa.svg" />}[https://codeclimate.com/github/juanroldan1989/foodie-blog-api]
 
 Rails API meant to provide the backend site of this Foodie Blog: https://github.com/juanroldan1989/foodie-blog
 
@@ -33,3 +33,6 @@ Rails API meant to provide the backend site of this Foodie Blog: https://github.
 
 * Retrieve the list of ActivityItems generated:
 <code>curl http://localhost:5000/activity_items</code>
+
+Live app https://foodie-blog-api.herokuapp.com/v1/activity_items
+Live app https://foodie-blog-api.herokuapp.com/v1/posts
