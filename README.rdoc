@@ -1,6 +1,6 @@
 == Foodie Blog API {<img src="https://codeclimate.com/github/juanroldan1989/foodie-blog-api/badges/gpa.svg" />}[https://codeclimate.com/github/juanroldan1989/foodie-blog-api]
 
-Rails API meant to provide the backend site of this Foodie Blog: https://github.com/juanroldan1989/foodie-blog
+Rails API meant to store resources(posts, recipes, reviews and activity) and provide the backend for this Cooking Blog: https://github.com/juanroldan1989/foodie-blog
 
 ---------------------------------------------------------------
 
@@ -19,6 +19,8 @@ Rails API meant to provide the backend site of this Foodie Blog: https://github.
 * <code>bundle install</code>
 * <code>rake db:migrate</code>
 * <code>rake test</code>
+* Set example content: <code>rake set:example:content</code>
+* <code>redis-server</code>
 * <code>foreman start</code>
 
 ---------------------------------------------------------------
@@ -37,3 +39,7 @@ Rails API meant to provide the backend site of this Foodie Blog: https://github.
 Live app https://foodie-blog-api.herokuapp.com/v1/activity_items
 
 Live app https://foodie-blog-api.herokuapp.com/v1/posts
+
+Live app https://foodie-blog-api.herokuapp.com/v1/recipes
+
+Live app https://foodie-blog-api.herokuapp.com/v1/reviews
