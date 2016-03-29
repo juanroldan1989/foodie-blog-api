@@ -20,9 +20,11 @@ module FoodieBlogApi
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 
+    host_allowed = Rails.env.production? ? "https://foodie-blog.herokuapp.com" : "localhost:4200"
+
     Rails.application.config.middleware.insert_before ActionDispatch::Static, "Rack::Cors" do
       allow do
-        origins "localhost:4200" # Frontend app running at port '4200'
+        origins host_allowed # Frontend app running at port '4200'
 
         resource "*",
           headers: :any,
