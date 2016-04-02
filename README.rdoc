@@ -36,10 +36,14 @@ Rails API meant to store resources(posts, recipes, reviews and activity) and pro
 * Retrieve the list of ActivityItems generated:
 <code>curl http://localhost:5000/activity_items</code>
 
-Live app https://foodie-blog-api.herokuapp.com/v1/activity_items
+---------------------------------------------------------------
 
-Live app https://foodie-blog-api.herokuapp.com/v1/posts
+<b>Live App</b>
 
-Live app https://foodie-blog-api.herokuapp.com/v1/recipes
+https://foodie-blog-api.herokuapp.com/v1/activity_items
 
-Live app https://foodie-blog-api.herokuapp.com/v1/reviews
+https://foodie-blog-api.herokuapp.com/v1/posts
+
+https://foodie-blog-api.herokuapp.com/v1/recipes
+
+https://foodie-blog-api.herokuapp.com/v1/reviews
