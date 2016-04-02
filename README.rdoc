@@ -1,4 +1,4 @@
-== Foodie Blog API {<img src="https://codeclimate.com/github/juanroldan1989/foodie-blog-api/badges/gpa.svg" />}[https://codeclimate.com/github/juanroldan1989/foodie-blog-api]
+== Foodie Blog API {<img src="https://codeclimate.com/github/juanroldan1989/foodie-blog-api/badges/gpa.svg" />}[https://codeclimate.com/github/juanroldan1989/foodie-blog-api] {<img src="https://travis-ci.org/juanroldan1989/foodie-blog-api.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/juanroldan1989/foodie-blog-api] {<img src="https://coveralls.io/repos/github/juanroldan1989/foodie-blog-api/badge.svg?branch=master" alt="Coverage Status" />}[https://coveralls.io/github/juanroldan1989/foodie-blog-api?branch=master]
 
 Rails API meant to store resources(posts, recipes, reviews and activity) and provide the backend for this Cooking Blog: https://github.com/juanroldan1989/foodie-blog
 
