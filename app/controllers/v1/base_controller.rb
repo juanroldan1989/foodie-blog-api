@@ -2,6 +2,12 @@ module V1
   class BaseController < ApplicationController
     before_action :set_resource, only: [:show, :update, :destroy]
 
+    def index
+      @resources = resource_class.all
+
+      render json: { resource_key => @resources }
+    end
+
     def show
       render json: @resource
     end
