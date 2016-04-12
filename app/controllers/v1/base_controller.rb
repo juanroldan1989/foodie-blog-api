@@ -5,7 +5,7 @@ module V1
     def index
       @resources = resource_class.all
 
-      render json: { resources: @resources }
+      render json: @resources
     end
 
     def show
