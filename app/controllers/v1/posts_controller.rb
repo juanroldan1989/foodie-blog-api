@@ -4,7 +4,7 @@ module V1
     def index
       @posts = Post.all
 
-      render json: { posts: @posts }
+      render json: { "posts" => @posts }
     end
 
     private
