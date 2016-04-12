@@ -9,7 +9,7 @@ module V1
     test "should get index" do
       get :index
       assert_response :success
-      assert_not_nil assigns(:reviews)
+      assert_not_nil assigns(:resources)
     end
 
     test "should create review" do
